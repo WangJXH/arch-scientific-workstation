@@ -1,0 +1,76 @@
+
+# Personal UltiSnips definitions.
+snippet ci "cite" 
+\cite{$1}
+endsnippet
+
+snippet sig "stress" 
+\sigma
+endsnippet
+
+snippet bsm "boldsymbol" 
+\boldsymbol{$1}
+endsnippet
+
+snippet mbf "mathbf" 
+\mathbf{$1}
+endsnippet
+
+snippet bsf "insertsubfigure" 
+\begin{subfigure}{$1\linewidth}
+\centering
+\includegraphics[width=$2\linewidth]{$3}
+\caption{$0}
+\end{subfigure}
+endsnippet
+
+snippet red "textcolor" 
+\textcolor{red}{$1}
+endsnippet
+
+snippet icode "codeinline" wA 
+\lstinline{$1} $0
+endsnippet
+
+snippet mk "Math" wA
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet dm "Math" wA
+\[
+$1
+.\] $0
+endsnippet
+
+# snippet '([A-Za-z])(\d)' "auto subscript" wrA
+# `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+# endsnippet
+
+# snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
+# `!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+# endsnippet
+
+snippet sr "^2" 
+^2
+endsnippet
+
+snippet cb "^3" iA
+^3
+endsnippet
+
+snippet msup "superscript" iA
+^{$1}$0
+endsnippet
+
+snippet msub "superscript" iA
+_{$1}$0
+endsnippet
+
+snippet // "Fraction" i
+\\frac{$1}{$2}$0
+endsnippet

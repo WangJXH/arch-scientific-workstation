@@ -1,0 +1,8 @@
+base
+base-devel
+sudo
+openssh
+man-db
+man-pages
+wget
+unzip

@@ -1,0 +1,62 @@
+snippet	sub "Subroutine structure"
+# Personal UltiSnips definitions.
+SUBROUTINE $1($0) 
+! REMEMBER TO INITIALIZE EVERYTHING!!!!
+USE GLOBAL
+IMPLICIT NONE
+
+INTEGER, INTENT(IN)::
+REAL*8, INTENT(IN)::
+INTEGER, INTENT(OUT)::
+REAL*8, INTENT(OUT)::
+INTEGER, INTENT(INOUT)::
+REAL*8, INTENT(INOUT)::
+
+RETURN
+END
+
+endsnippet
+
+snippet int "Integer type "
+INTEGER:: $0
+endsnippet
+
+snippet inti "Integer type in"
+INTEGER, INTENT(IN):: $0
+endsnippet
+
+snippet into "Integer type out"
+INTEGER, INTENT(OUT):: $0
+endsnippet
+
+snippet reai "real type IN"
+REAL*8, INTENT(IN):: $0
+endsnippet
+
+snippet reao "real type OUT"
+REAL*8, INTENT(OUT):: $0
+endsnippet
+
+snippet reaio "real type INOUT"
+REAL*8, INTENT(INOUT):: $0
+endsnippet
+snippet rea "real type"
+REAL*8:: $0
+endsnippet
+snippet dim "array type"
+DIMENSION 
+endsnippet
+
+			
+
+snippet ift "IF THEN"
+IF ($1) THEN
+	$0
+ENDIF
+endsnippet
+
+snippet do "DO ENDDO"
+DO $1 
+	$0
+ENDDO
+endsnippet

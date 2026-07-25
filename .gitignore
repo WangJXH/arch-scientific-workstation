@@ -1,0 +1,36 @@
+# Secrets — NEVER commit these
+.env
+.env.*.local
+*.env.local
+*.key
+**/secrets/
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Build artifacts (if any)
+*.o
+*.so
+*.a
+
+# LaTeX build output
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc

@@ -1,0 +1,71 @@
+# Personal UltiSnips definitions.
+snippet head "header"
+#ifndef $1
+#define $1
+
+#include <$2>    
+
+classs $1 {
+
+	public:
+
+	private:
+
+}
+#endif // 
+endsnippet
+
+snippet if "condi"
+if ($1)
+{
+	$2
+};$0
+endsnippet
+
+snippet coni "const"
+const int $1 $2 = $3;
+endsnippet
+
+snippet arma "arma"
+arma :: $1 $2;
+endsnippet
+
+snippet class "class"
+class $1
+{
+	$2
+};$0
+endsnippet
+
+snippet cout "print"
+std::cout << $1 << "\n";
+endsnippet
+
+snippet for "forloop"
+for ($1)
+{
+	$2
+};$0
+endsnippet
+
+snippet while "loop"
+while ($1)
+{
+	$2
+};$0
+endsnippet
+
+snippet cpp "start"
+#include <iostream>
+$1
+
+using namespace std;
+
+int main()
+{
+
+	$2
+	return 0;
+}
+
+endsnippet

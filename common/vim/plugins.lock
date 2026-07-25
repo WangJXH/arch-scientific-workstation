@@ -1,0 +1,18 @@
+# name	repository	commit
+Vundle.vim	https://github.com/VundleVim/Vundle.vim.git	5548a1a937d4e72606520c7484cd384e6c76b565
+ctrlp.vim	https://github.com/ctrlpvim/ctrlp.vim.git	3739dcd638f457559d5a1ae1e398276175694e4b
+lightline.vim	https://github.com/itchyny/lightline.vim.git	d042c506cb2e7a59112a72447e0b5fe8739d9d1d
+nerdtree	https://github.com/preservim/nerdtree.git	690d061b591525890f1471c6675bcb5bdc8cdff9
+tagbar	https://github.com/preservim/tagbar.git	07cb8247487208124978daff8e13624667635457
+ultisnips	https://github.com/SirVer/ultisnips.git	62aca2a735b76d24a8fc7862f902330ac688849b
+vim-clang-format	https://github.com/rhysd/vim-clang-format.git	6b791825ff478061ad1c57b21bb1ed5a5fd0eb29
+vim-commentary	https://github.com/tpope/vim-commentary.git	64a654ef4a20db1727938338310209b6a63f60c9
+vim-dispatch	https://github.com/tpope/vim-dispatch.git	a2ff28abdb2d89725192db5b8562977d392a4d3f
+vim-fugitive	https://github.com/tpope/vim-fugitive.git	3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0
+vim-gutentags	https://github.com/ludovicchabant/vim-gutentags.git	aa47c5e29c37c52176c44e61c780032dfacef3dd
+vim-highlightedyank	https://github.com/machakann/vim-highlightedyank.git	285a61425e79742997bbde76a91be6189bc988fb
+vim-rooter	https://github.com/airblade/vim-rooter.git	51402fb77c4d6ae94994e37dc7ca13bec8f4afcc
+vim-snippets	https://github.com/honza/vim-snippets.git	ededcf7581962ee616cadab360d5966f3307f11a
+vim-surround	https://github.com/tpope/vim-surround.git	3d188ed2113431cf8dac77be61b842acb64433d9
+vim-tmux-navigator	https://github.com/christoomey/vim-tmux-navigator.git	e41c431a0c7b7388ae7ba341f01a0d217eb3a432
+vimtex	https://github.com/lervag/vimtex.git	a5949d2800c1866c878956d49c51fc8d003c6b99

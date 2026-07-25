@@ -1,0 +1,4 @@
+biber
+texlive-*
+zathura
+zathura-pdf-mupdf
