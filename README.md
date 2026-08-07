@@ -10,21 +10,20 @@ research projects, private repositories, and machine-specific software.
 
 ## Quick start
 
-Read [`START-HERE.md`](START-HERE.md), then preview each change before applying
-it:
+Read [`START-HERE.md`](START-HERE.md), then preview and run the complete
+bootstrap:
 
 ```bash
-./arch/install.sh
-./scripts/install-dotfiles.sh --dry-run
-./scripts/install-dotfiles.sh
-./scripts/install-plugins.sh --dry-run
-./scripts/install-plugins.sh
-./scripts/verify-setup.sh
+./scripts/bootstrap-workstation.sh --dry-run
+./scripts/bootstrap-workstation.sh
 ```
 
-`arch/install.sh` performs a full Arch upgrade and invokes `sudo`; review
-`arch/packages.txt` before running it. Existing dotfiles are backed up under
-`~/.local/state/linux-profile/backups/`.
+The bootstrap runs the Arch package, dotfile, plugin, and verification stages
+in order. Use `--skip-packages` when the system package layer is already ready.
+The Arch stage performs a full upgrade and invokes `sudo`; review
+`arch/packages.txt` first. Existing dotfiles are backed up under
+`~/.local/state/linux-profile/backups/`. Each stage can also be run separately
+for troubleshooting or selective installation.
 
 ## Layout
 
@@ -32,7 +31,8 @@ it:
 - `common/bash/` — generic interactive Bash configuration
 - `common/vim/` — Vim configuration and pinned plugins
 - `common/tmux/` — tmux configuration and pinned plugins
-- `scripts/` — previewable installers, verification, and snapshot tools
+- `scripts/` — complete bootstrap, previewable installers, verification, and
+  snapshot tools
 
 ## Exact-version snapshots
 

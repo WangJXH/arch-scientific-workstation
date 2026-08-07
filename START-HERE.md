@@ -20,7 +20,22 @@ less README.md
 less arch/packages.txt
 ```
 
-## 2. Install system packages
+## 2. Preview and run the complete setup
+
+```bash
+./scripts/bootstrap-workstation.sh --dry-run
+./scripts/bootstrap-workstation.sh
+```
+
+The bootstrap installs system packages, links dotfiles, restores pinned
+plugins, and verifies the result. The Arch package stage asks for confirmation
+before invoking `sudo pacman -Syu`. Use `--skip-packages` if that stage has
+already been completed.
+
+The remaining sections show how to run each stage separately for selective
+installation or troubleshooting.
+
+## 3. Install system packages separately
 
 ```bash
 ./arch/install.sh
@@ -29,7 +44,7 @@ less arch/packages.txt
 The script shows the package list and asks for confirmation before invoking
 `sudo pacman -Syu`.
 
-## 3. Install dotfiles
+## 4. Install dotfiles separately
 
 ```bash
 ./scripts/install-dotfiles.sh --dry-run
@@ -39,7 +54,7 @@ The script shows the package list and asks for confirmation before invoking
 Existing targets are moved to a timestamped directory below
 `~/.local/state/linux-profile/backups/`. Open a new shell after installation.
 
-## 4. Install pinned plugins
+## 5. Install pinned plugins separately
 
 ```bash
 ./scripts/install-plugins.sh --dry-run
@@ -48,7 +63,7 @@ Existing targets are moved to a timestamped directory below
 
 Repositories with local changes are left untouched.
 
-## 5. Verify
+## 6. Verify separately
 
 ```bash
 ./scripts/verify-setup.sh
@@ -76,4 +91,3 @@ Dotfile backups are stored under:
 
 To restore one, remove the installed symlink and move the desired backup back
 to its original home-directory location.
-
